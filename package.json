@@ -1,0 +1,10 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Testing git hooks",
+  "main": "index.html",
+  "dependencies": {
+    "velocity-animate": "^1.2.3"
+  },
+}
