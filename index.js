@@ -30,3 +30,7 @@ app.get('/list', function (req, res) {
 app.get('/error', function (req, res) {
   res.status(402).send('Insufficient funds');
 });
+
+app.get('/failure', function (req, res) {
+  res.status(500).send('Server is done');
+});
