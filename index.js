@@ -9,7 +9,9 @@ app.listen(8080, function () {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '/client')));
+app.use(express.static(path.join(__dirname, 'client')));
+
+// console.log((path.join(__dirname, '/client')));
 
 app.get('/', function (req, res) {
   res.sendFile('index.html');
