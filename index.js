@@ -21,6 +21,12 @@ app.get('/data', function (req, res) {
   });
 });
 
+app.get('/list', function (req, res) {
+  res.send({
+    list: ['one', 'two', 'three']
+  });
+});
+
 app.get('/error', function (req, res) {
   res.status(402).send('Insufficient funds');
 });
