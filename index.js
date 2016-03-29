@@ -23,7 +23,7 @@ app.get('/data', function (req, res) {
 
 app.get('/list', function (req, res) {
   res.send({
-    list: ['one', 'two', 'three']
+    list: ['one', 'two', 'three', 'four', 'five']
   });
 });
 
