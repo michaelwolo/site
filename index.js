@@ -20,3 +20,7 @@ app.get('/data', function (req, res) {
     data: 'some data'
   });
 });
+
+app.get('/error', function (req, res) {
+  res.status(402).send('Insufficient funds');
+});
