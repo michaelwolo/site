@@ -6,7 +6,7 @@ var socket = require('./socket');
 
 var app = express();
 var server = app.listen(8080, function () {
-  console.log('Your site is served. Bon appetit.')
+  console.log('Your site is served. Bon appetit.');
 });
 var io = socketio(server);
 
