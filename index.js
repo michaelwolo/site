@@ -1,11 +1,16 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
+var socketio = require('socket.io');
+var socket = require('./socket');
 
 var app = express();
-app.listen(8080, function () {
+var server = app.listen(8080, function () {
   console.log('Your site is served. Bon appetit.')
 });
+var io = socketio(server);
+
+socket(io);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
